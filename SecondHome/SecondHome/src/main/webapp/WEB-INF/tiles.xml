@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+        
+<tiles-definitions>  
+ 
+    <!-- Base Define -->
+    <definition name="base.definition" 
+        template="/WEB-INF/layouts/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+    </definition>  
+ 
+ 	<!-- Home Page  -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_home.jsp" />  
+    </definition>    
+ 
+    <!-- Home Page  -->
+    <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_welcome.jsp" />  
+    </definition> 
+    
+     <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_login.jsp" />  
+    </definition>
+    
+    <definition name="signUp" extends="base.definition">  
+        <put-attribute name="title" value="User Registration" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userRegister.jsp" />  
+    </definition>
+    
+       <definition name="aboutUs" extends="base.definition">  
+        <put-attribute name="title" value="About Us" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_aboutUs.jsp" />  
+    </definition>
+    
+    <definition name="contactUs" extends="base.definition">  
+        <put-attribute name="title" value="Contact Us" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_contactUs.jsp" />  
+    </definition>
+    
+    
+    <definition name="user" extends="base.definition">  
+        <put-attribute name="title" value="Warden" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_user.jsp" />  
+    </definition>
+   
+	<definition name="userList" extends="base.definition">  
+        <put-attribute name="title" value="User List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userList.jsp" />  
+    </definition>
+    
+    <definition name="hostel" extends="base.definition">  
+        <put-attribute name="title" value="Hostel" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_hostel.jsp" />  
+    </definition>
+   
+	<definition name="hostelList" extends="base.definition">  
+        <put-attribute name="title" value="Hostel List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_hostelList.jsp" />  
+    </definition>
+    
+    <definition name="room" extends="base.definition">  
+        <put-attribute name="title" value="Room" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_room.jsp" />  
+    </definition>
+   
+	<definition name="roomList" extends="base.definition">  
+        <put-attribute name="title" value="Room List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_roomList.jsp" />  
+    </definition>
+    
+     <definition name="warden" extends="base.definition">  
+        <put-attribute name="title" value="Allot Warden" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_warden.jsp" />  
+    </definition>
+   
+	<definition name="wardenList" extends="base.definition">  
+        <put-attribute name="title" value="Allot Warden List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_wardenList.jsp" />  
+    </definition>
+    
+    <definition name="visitor" extends="base.definition">  
+        <put-attribute name="title" value="Visitor" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_visitor.jsp" />  
+    </definition>
+   
+	<definition name="visitorList" extends="base.definition">  
+        <put-attribute name="title" value="Visitor List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_visitorList.jsp" />  
+    </definition>
+    
+     <definition name="application" extends="base.definition">  
+        <put-attribute name="title" value="Application" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_application.jsp" />  
+    </definition>
+   
+	<definition name="applicationList" extends="base.definition">  
+        <put-attribute name="title" value="Application List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_applicationList.jsp" />  
+    </definition>
+    
+     <definition name="allotment" extends="base.definition">  
+        <put-attribute name="title" value="Allotment" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_allotment.jsp" />  
+    </definition>
+    
+     <definition name="allotmentList" extends="base.definition">  
+        <put-attribute name="title" value="Allotment List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_allotmentList.jsp" />  
+    </definition>
+    
+     <definition name="myprofile" extends="base.definition">  
+        <put-attribute name="title" value="My Profile" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_myProfile.jsp" />  
+    </definition>
+    
+     <definition name="changePassword" extends="base.definition">  
+        <put-attribute name="title" value="Change Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_changePassword.jsp" />  
+    </definition>
+    
+     <definition name="forgetPassword" extends="base.definition">  
+        <put-attribute name="title" value="Forget Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_forgetPassword.jsp" />  
+    </definition>
+   
+</tiles-definitions> 
